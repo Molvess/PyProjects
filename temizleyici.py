@@ -1,0 +1,32 @@
+import os 
+import time
+import pyautogui
+
+pyautogui.hotkey('win', 'r')
+time.sleep(0.7)
+pyautogui.typewrite('%temp%')
+time.sleep(0.7)
+pyautogui.press('enter')
+time.sleep(0.7)
+pyautogui.hotkey('ctrl', 'a')
+time.sleep(0.7)
+pyautogui.press('delete')
+time.sleep(0.7)
+pyautogui.press('enter')
+time.sleep(0.7)
+pyautogui.hotkey('alt', 'F4')
+time.sleep(1)
+
+pyautogui.hotkey('win', 'r')
+time.sleep(0.7)
+pyautogui.typewrite('Temp')
+time.sleep(0.7)
+pyautogui.press('enter')
+time.sleep(0.7)
+pyautogui.hotkey('ctrl', 'a')
+time.sleep(0.7)
+pyautogui.press('delete')
+time.sleep(0.7)
+pyautogui.press('enter')
+time.sleep(0.7)
+pyautogui.hotkey('alt', 'F4')
