@@ -1,0 +1,17 @@
+import pygame } 
+import time   }
+pygame.init() = projeye bunlarla başla
+
+screen = pygame.display.set_mode((x,y)) = x,y çözünürlüğünde pencere açar
+pygame.draw.x() = x == isteidğin şekil () ise = yüzey, renk, merkez[kordinatlar], yarıçap
+pygame.display.flip() = ekranı sürekli günceller
+pygame.quit() = Pygameden çıkar
+
+#HAZIR RENK KODLARI
+
+siyah=(0,0,0)
+beyaz=(255,255,255)
+yesil=(34,139,34)
+mavi=(0,0,255)
+
+
