@@ -373,4 +373,4 @@ async def Emekigeçenler(msg):
     await msg.send("Test Edenler:" "" "<@429614390489120770>,<@758756135472988176>,KıraathaneYetkilileri")
 
 
-Bot.run('ODk1NzM5MTAyMTE5NDczMTYy.Gi_QWS.N52UIlMn7bhR96NDI3Qptk3TQtwN0yLdFZa-WU')
+Bot.run('')
