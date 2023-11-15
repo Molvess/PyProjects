@@ -154,4 +154,4 @@ async def yapımcılar(msg):
     await msg.send("Tasarım :" "" "@reiki#8431")
     await msg.send("Test Edenler:" "" "@Shaker#2824,@reiki#8431,@TugayEkin#0011" )
 
-Bot.run('ODc3OTM2NTU3OTgwNTQxMDI5.YR54Ig.NDaCKUT5q3uiHc5CROtH-s1tKUo')
+Bot.run('')
