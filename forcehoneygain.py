@@ -1,9 +1,23 @@
 import subprocess
 import os
-task_list = subprocess.check_output("tasklist").decode("utf-8") 
+import time 
+
+HONEYGAIN_YOLU = r"C:\Program Files (x86)\Honeygain\Honeygain.exe"
+
+
+GIZLI_BAYRAK = 0x08000000 
 
 while True:
-    if "uygulama.exe" in task_list:
+    task_list = subprocess.check_output("tasklist").decode("utf-8") 
+
+    if "Honeygain.exe" in task_list:
         print("Program açık")
     else:
-        os.system('"C:\\Program Files (x86)\\Honeygain\\Honeygain.exe"')
+        print("Program kapalı, gizlice yeniden başlatılıyor...")
+        try:
+            subprocess.Popen([HONEYGAIN_YOLU], creationflags=GIZLI_BAYRAK)
+            print("Honeygain gizlice başlatıldı.")
+        except FileNotFoundError:
+            print(f"HATA: {HONEYGAIN_YOLU} yolu bulunamadı.")
+            
+    time.sleep(5)
